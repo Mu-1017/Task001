@@ -1,0 +1,194 @@
+h1
+{
+    font-size: 36px;
+}
+h2
+{
+    font-size:20px;
+}
+
+p
+{
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background:#e5e5e5;
+}
+
+.head{
+
+    padding: 20px 10px 0 10px;
+    position: relative;
+    min-width: 1000px;
+    background: #8F4586;
+}
+
+.icon{
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+
+.nav{
+    min-width: 980px;
+    width:980px;
+    height:80px;
+    margin: 0 auto;
+    position: relative
+}
+
+.head .menu{
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+}
+
+.menu li{
+    display: inline;
+    margin: 10px;   
+}
+
+a{
+    color: white;
+    text-decoration-color: aliceblue;
+    text-decoration: none;
+}
+
+.banner{
+    position: relative;
+    min-width: 1020px;
+}
+
+.banner img
+{
+    width: 100%;
+    height:auto;
+}
+.banner .info
+{
+    background:  linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.25) 25%, transparent);
+    width: 200px;
+    min-height: 100px;
+    color:white;
+    position: absolute;
+    bottom: 20px;
+    right:20px;
+}
+
+.content
+{
+    width: 980px;
+    margin:0 auto;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+
+}
+.content img{
+    width: 240px;
+    height: 240px;
+}
+.content .gallery
+{   
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    background: white;
+    float: left;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.profile
+{
+    padding-bottom:10px;
+    height: 300px;
+    width: 100%;
+    background:white;
+    
+}
+
+.photo
+{ 
+    width: 200px;
+    position: relative;
+    top: -100px;
+    margin: 0 auto;
+}
+
+.photo img{
+    width:200px;
+}
+
+.intro
+{
+    position: relative;
+    top: -100px;
+    margin: 0 auto;
+    width:300px;
+}
+
+.footer
+{
+    margin: 0;
+    background: black;
+}
+.footer .menu{
+    height: 50px;
+    border-bottom: 0.5px solid white;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;/*Horizontal*/
+    align-items: center;    /*Vertical*/
+}
+
+.links{
+    color:white;
+    min-height: 100px;
+}
+
+.footer a
+{
+    color:gainsboro;
+}
+
+h3
+{
+    font-weight: normal;
+    font-size: 14px;
+    color:gainsboro;
+    
+}
+
+.footer ul{
+    
+    list-style: none outside none;
+}
+
+.links{
+    margin: 0 auto;
+    width: 980px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;/*Horizontal*/
+    align-items: center;    /*Vertical*/
+}
+
+.copyright{
+    padding-top: 20px;
+    min-height: 100px;
+    margin: 0 auto;
+}
+
+.copyright h3,p{
+    margin: 5px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;/*Horizontal*/
+}
