@@ -1,0 +1,17 @@
+.search {
+  border: 2px solid #d5dfef;
+}
+input[type="button"] {
+  background-color: #d5dfef;
+}
+.content {
+  min-height: 800px;
+}
+.content {
+  width: 980px;
+}
+.links,
+.nav {
+  min-width: 980px;
+  width: 980px;
+}
