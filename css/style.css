@@ -1,21 +1,41 @@
+html{
+    position: relative;
+    min-width: 100%;
+}
 h1
 {
     font-size: 36px;
 }
-h2
-{
+h2{
     font-size:20px;
 }
 
-p
-{
+p{
     font-size: 16px;
 }
 
 body{
-    margin: 0;
+    margin-bottom: 400px;
     padding: 0;
     background:#e5e5e5;
+}
+
+.footer
+{
+    width: 100%;
+    margin: 0;
+    height: 400x;
+    background: black;
+    position: absolute;
+    bottom: 0px;
+}
+.footer>.menu{
+    height: 50px;
+    border-bottom: 0.5px solid white;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;/*Horizontal*/
+    align-items: center;    /*Vertical*/
 }
 
 .head{
@@ -84,6 +104,7 @@ a{
     margin:0 auto;
     margin-top: 20px;
     margin-bottom: 150px;
+    position: relative;
     display:flex;
     flex-wrap: wrap;
     justify-content:space-between;
@@ -108,7 +129,7 @@ a{
 .profile
 {
     padding-bottom:10px;
-    height: 300px;
+    min-height: 300px;
     width: 100%;
     background:white;
     
@@ -132,20 +153,6 @@ a{
     top: -100px;
     margin: 0 auto;
     width:300px;
-}
-
-.footer
-{
-    margin: 0;
-    background: black;
-}
-.footer .menu{
-    height: 50px;
-    border-bottom: 0.5px solid white;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:center;/*Horizontal*/
-    align-items: center;    /*Vertical*/
 }
 
 .links{
@@ -191,4 +198,31 @@ h3
     display:flex;
     flex-wrap: wrap;
     justify-content:space-around;/*Horizontal*/
+}
+
+.sidebar{
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    min-height: 80px;
+    background: red;
+}
+
+.blog{
+    min-height: 80px;
+    background: green;
+}
+
+.search{
+    background: white;
+    border: 1px solid lightgray;
+    padding: 3px;
+}
+
+.search input{
+    border: none;
+}
+
+.search i{
+    font-size: 30px;
 }
