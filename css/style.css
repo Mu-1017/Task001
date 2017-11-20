@@ -43,7 +43,6 @@ body{
     padding: 20px 10px 0 10px;
     position: relative;
     min-width: 1000px;
-    background: #8F4586;
 }
 
 .icon{
@@ -199,9 +198,8 @@ h3
 .sidebar{
     position: absolute;
     right: 0px;
-    width: 280px;
+    width: 250px;
     min-height: 80px;
-    background: red;
 }
 
 .blog{
@@ -225,4 +223,10 @@ h3
 
 .search i{
     font-size: 30px;
+}
+
+.filter{
+    padding: 0;
+    background: white;
+    margin-left: 0;
 }

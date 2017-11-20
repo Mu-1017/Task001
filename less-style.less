@@ -1,6 +1,27 @@
+//cd GitHub\Task001> lessc less-style.less css\less-style.css
+
 @light-gray:#d5dfef;
+@purple:#8F4586;
+@light-purple:#eb9bf7;
+@dark-purple:#9903af;
+.head{
+    background:@purple;
+}
+
 .search{
     border: 2px solid @light-gray;
+}
+
+.filter li{
+    margin: 0;
+    padding: 10px;
+    list-style: none inside none;
+    border-top: 1px solid @light-gray;
+    border-left: 3px solid @light-purple;
+}
+
+.filter li:hover{
+    border-left-color: @dark-purple;
 }
 
 input[type="button"]{

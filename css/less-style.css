@@ -1,5 +1,18 @@
+.head {
+  background: #8F4586;
+}
 .search {
   border: 2px solid #d5dfef;
+}
+.filter li {
+  margin: 0;
+  padding: 10px;
+  list-style: none inside none;
+  border-top: 1px solid #d5dfef;
+  border-left: 3px solid #eb9bf7;
+}
+.filter li:hover {
+  border-left-color: #9903af;
 }
 input[type="button"] {
   background-color: #d5dfef;
