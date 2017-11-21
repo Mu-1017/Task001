@@ -124,6 +124,7 @@ a{
 
 .profile
 {
+    margin-top:150px;
     padding-bottom:10px;
     min-height: 300px;
     width: 100%;
@@ -141,6 +142,7 @@ a{
 
 .photo img{
     width:200px;
+    height: 200px;
 }
 
 .intro
