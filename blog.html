@@ -38,20 +38,15 @@
                     <li>JavaScript</li>
                     <li>Other</li>
                 </ul>
-            <div id="carlender">
-            <table>
-              <caption>November 2017</caption>
-              <tr>
-                <th>Su</th>
-                <th>Mo</th>
-                <th>Tu</th>
-                <th>We</th>
-                <th>Th</th>
-                <th>Fr</th>
-                <th>Sa</th>
-              </tr>
-            </table>
-        </div>
+
+<!--            placeholder for carlender dynamically created by carlender.js-->
+            <input id="get" type="button" value="get calender"/>
+            <br/>
+            <input id="last" type="button" value="<">
+            <span id="caption"></span>
+              <input id="next" type="button" value=">">
+            <div id="calender">
+            </div>
         </div>
 
     </div>
@@ -118,4 +113,5 @@
 <!---------------------------------------------Footer End---------------------------------------------------------->
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
     <script src="/script/script.js"></script>
+    <script src="/script/carlender.js"></script>
 </html>
