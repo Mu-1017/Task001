@@ -40,12 +40,14 @@
                 </ul>
 
 <!--            placeholder for carlender dynamically created by carlender.js-->
-            <input id="get" type="button" value="get calender"/>
-            <br/>
-            <input id="last" type="button" value="<">
-            <span id="caption"></span>
-              <input id="next" type="button" value=">">
             <div id="calender">
+<!--                <input id="get" type="button" value="get calender"/>-->
+                <div id="cal-header">
+                    <input id="last" type="button" class="material-icons" value="navigate_before">
+                    <span id="caption"></span>
+                    <input id="next" type="button" class="material-icons" value="navigate_next">
+                </div>
+                <div id="cal-content"></div>
             </div>
         </div>
 

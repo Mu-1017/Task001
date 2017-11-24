@@ -237,3 +237,7 @@ h3
     color:red;
     display: flex;
 }
+
+.gray-text{
+    color: gray;
+}
