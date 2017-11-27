@@ -1,41 +1,72 @@
 //cd GitHub\Task001> lessc less-style.less css\less-style.css
-
+@background-color:#e5e5e5;
 @light-gray:#d5dfef;
 @purple:#8F4586;
 @light-purple:#eb9bf7;
 @dark-purple:#9903af;
-.head{
-    background:@purple;
-}
-
-.search{
-    border: 2px solid @light-gray;
-}
-
-.filter li{
-    margin: 0;
-    padding: 10px;
-    list-style: none inside none;
-    border-top: 1px solid @light-gray;
-    border-left: 3px solid @light-purple;
-}
-
-.filter li:hover{
-    border-left-color: @dark-purple;
-}
-
-input[type="button"]{
-    background-color: @light-gray;
-}
-
 @min-content-height:800px;
-.content{
-    min-height: @min-content-height;
+@content-width:980px;
+@font-large:36px;
+@font-mid:20px;
+@font-small:16px;
+@full-width:1.0;
+
+
+html{
+    position: relative;
+    //Less - function
+    min-width: percentage(@full-width);
+    h1{font-size: @font-large;}
+    h2{font-size:@font-mid;}
+    h3
+    {
+        font-weight: normal;
+        font-size: 14px;
+        color:gainsboro;
+
+    }
+    p{font-size: @font-small;}
+    body{
+        margin-bottom: 400px;
+        padding: 0;
+        background:@background-color;
+    }
+
+    a{
+        color: white;
+        text-decoration-color: aliceblue;
+        text-decoration: none;
+    }
 }
 
-@content-width:980px;
-.content{
-    width: @content-width;
+.head{
+
+    padding: 20px 10px 0 10px;
+    position: relative;
+    min-width: 1000px;
+
+    .icon{
+        position: absolute;
+        right: 10px;
+        bottom: 20px;
+    }
+
+    .nav{
+        height:80px;
+        margin: 0 auto;
+        position: relative;
+
+        .menu{
+            position: absolute;
+            right: 10px;
+            bottom: 0px;
+
+            li{
+                display: inline;
+                margin: 10px;
+            }
+        }
+    }
 }
 
 .links, .nav{
@@ -43,71 +74,260 @@ input[type="button"]{
     width:@content-width;
 }
 
-#carlender caption{
-    color:red;
-    display: flex;
-}
-
-.gray-text{
-    color: gray;
-}
-
-#calender {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f8f7fa;
-  color: #333;
-  padding: 5px;
-}
-
-#cal-header{
-    background-color: @purple;
-    color:white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    height: 50px;
-}
-
-#cal-header input[type="button"]
+.footer
 {
-    font: 24px;
-    background: transparent;
-    border: none;
-    margin: 0 10px;
-    color:@light-gray;
+    width: percentage(@full-width);
+    margin: 0;
+    height: 400px;
+    background: black;
+    position: absolute;
+    bottom: 0px;
+
+    .menu{
+        height: 50px;
+        border-bottom: 0.5px solid white;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:center;/*Horizontal*/
+        align-items: center;    /*Vertical*/
+    }
+
+    a{color:gainsboro; }
+
+    ul{list-style: none outside none;}
+
+    .links{
+        color:white;
+        min-height: 100px;
+        margin: 0 auto;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-around;/*Horizontal*/
+        align-items: center;    /*Vertical*/
+    }
 }
 
-#cal-header input[type="button"]:hover{
-    color:white;
+.content{
+    min-height: @min-content-height;
+    width: @content-width;
+    margin:0 auto;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+
+    img{
+        width: 240px;
+        height: 240px;
+    }
+    .cities
+    {
+        padding: 10px;
+        width: 300px;
+        height: 300px;
+        background: white;
+        float: left;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
 }
 
-#calender table {
-    margin: 5px;
-    padding:10px;
-    border: none;
-    width: 100%;
-    border-collapse: collapse;
-}
+.gray-text{color: gray;}
 
-#calender tr{
-    border: none;
-}
+.head{background:@purple;}
 
-#calender td{
-    width: 30px;
-    height: 30px;
+.copyright{
+    padding-top: 20px;
+    min-height: 100px;
     margin: 0 auto;
-    padding: 3px;
-    text-align: center;
+    h3,p{
+        margin: 5px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-around;/*Horizontal*/
+    }
 }
 
-#calender .week{
-    border: none;
+//home page
+.banner{
+    position: relative;
+    min-width: 1020px;
+
+    img
+    {
+        width: 100%;
+        height:auto;
+    }
+
+    .info
+    {
+        background:  linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.25) 25%, transparent);
+        width: 200px;
+        min-height: 100px;
+        color:white;
+        position: absolute;
+        bottom: 20px;
+        right:20px;
+    }
 }
 
-#calender .today{
-    color:white;
-    border-radius: 10px;
-    background: @purple;
+.profile
+{
+    margin-top:150px;
+    padding-bottom:10px;
+    min-height: 300px;
+    width: 100%;
+    background:white;
+
+    .photo
+    {
+        width: 200px;
+        position: relative;
+        top: -100px;
+        margin: 0 auto;
+        img{
+            width:200px;
+            height: 200px;
+        }
+    }
+
+    .intro
+    {
+        position: relative;
+        top: -100px;
+        margin: 0 auto;
+        width:300px;
+    }
+
+}
+//home page end
+
+
+.blog{
+    min-height: 80px;
+}
+
+.sidebar{
+    position: absolute;
+    right: 0px;
+    width: 250px;
+    min-height: 80px;
+}
+
+.search-form{
+    background: white;
+    padding: 10px;
+
+    .search{
+        background: white;
+        padding: 3px;
+        display: flex;
+        border: 2px solid @light-gray;
+
+        input{border: none;}
+        i{font-size: 30px;}
+        input[type="button"]{background-color: @light-gray;}
+    }
+}
+
+.filter{
+    padding: 0;
+    background: white;
+    margin-left: 0;
+
+    li{
+        margin: 0;
+        padding: 10px;
+        list-style: none inside none;
+        border-top: 1px solid @light-gray;
+        border-left: 3px solid @light-purple;
+        &:hover
+        {
+            border-left-color: @dark-purple;
+        }
+    }
+}
+
+#calender
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f7fa;
+    color: #333;
+    margin-left: 0;
+
+    #cal-header
+    {
+        background-color: @purple;
+        color:white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        height: 50px;
+        input[type="button"]
+        {
+            font: 24px;
+            background: transparent;
+            border: none;
+            margin: 0 10px;
+            color:@light-gray;
+
+            &:hover{
+                color:white;
+            }
+        }
+    }
+
+    #cal-content
+    {
+
+        table {
+            padding:10px;
+            border: none;
+            width: 100%;
+            border-collapse: collapse;
+
+            tr{
+                border: none;
+                padding: 0;
+            }
+
+            td{
+                width: 30px;
+                height: 30px;
+                margin: 0 auto;
+                padding: 3px;
+                text-align: center;
+            }
+
+            .week{
+                border: none;
+            }
+
+            .today{
+                color:white;
+                border-radius: 10px;
+                background: @purple;
+            }
+        }
+    }
+}
+
+#tags{
+    //LESS - Escaping
+    color: ~"gray";
+    //
+    margin:20px 0px;
+    padding: 10px;
+    background: white;
+    div{
+        margin: 10px;
+        span{margin: 3px;}
+        .l-tag{font-size: @font-large;color:@purple;font-weight: 3em;}
+        .m-tag{font-size: @font-mid;color:@purple;font-weight: 2em;}
+        .s-tag{font-size: @font-small;color:@purple;}
+    }
 }

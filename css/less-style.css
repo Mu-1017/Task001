@@ -1,8 +1,211 @@
+html {
+  position: relative;
+  min-width: 100%;
+}
+html h1 {
+  font-size: 36px;
+}
+html h2 {
+  font-size: 20px;
+}
+html h3 {
+  font-weight: normal;
+  font-size: 14px;
+  color: gainsboro;
+}
+html p {
+  font-size: 16px;
+}
+html body {
+  margin-bottom: 400px;
+  padding: 0;
+  background: #e5e5e5;
+}
+html a {
+  color: white;
+  text-decoration-color: aliceblue;
+  text-decoration: none;
+}
+.head {
+  padding: 20px 10px 0 10px;
+  position: relative;
+  min-width: 1000px;
+}
+.head .icon {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+}
+.head .nav {
+  height: 80px;
+  margin: 0 auto;
+  position: relative;
+}
+.head .nav .menu {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+}
+.head .nav .menu li {
+  display: inline;
+  margin: 10px;
+}
+.links,
+.nav {
+  min-width: 980px;
+  width: 980px;
+}
+.footer {
+  width: 100%;
+  margin: 0;
+  height: 400px;
+  background: black;
+  position: absolute;
+  bottom: 0px;
+}
+.footer .menu {
+  height: 50px;
+  border-bottom: 0.5px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*Horizontal*/
+  align-items: center;
+  /*Vertical*/
+}
+.footer a {
+  color: gainsboro;
+}
+.footer ul {
+  list-style: none outside none;
+}
+.footer .links {
+  color: white;
+  min-height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /*Horizontal*/
+  align-items: center;
+  /*Vertical*/
+}
+.content {
+  min-height: 800px;
+  width: 980px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 150px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content img {
+  width: 240px;
+  height: 240px;
+}
+.content .cities {
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  background: white;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gray-text {
+  color: gray;
+}
 .head {
   background: #8F4586;
 }
-.search {
+.copyright {
+  padding-top: 20px;
+  min-height: 100px;
+  margin: 0 auto;
+}
+.copyright h3,
+.copyright p {
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /*Horizontal*/
+}
+.banner {
+  position: relative;
+  min-width: 1020px;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+}
+.banner .info {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.25) 25%, transparent);
+  width: 200px;
+  min-height: 100px;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.profile {
+  margin-top: 150px;
+  padding-bottom: 10px;
+  min-height: 300px;
+  width: 100%;
+  background: white;
+}
+.profile .photo {
+  width: 200px;
+  position: relative;
+  top: -100px;
+  margin: 0 auto;
+}
+.profile .photo img {
+  width: 200px;
+  height: 200px;
+}
+.profile .intro {
+  position: relative;
+  top: -100px;
+  margin: 0 auto;
+  width: 300px;
+}
+.blog {
+  min-height: 80px;
+}
+.sidebar {
+  position: absolute;
+  right: 0px;
+  width: 250px;
+  min-height: 80px;
+}
+.search-form {
+  background: white;
+  padding: 10px;
+}
+.search-form .search {
+  background: white;
+  padding: 3px;
+  display: flex;
   border: 2px solid #d5dfef;
+}
+.search-form .search input {
+  border: none;
+}
+.search-form .search i {
+  font-size: 30px;
+}
+.search-form .search input[type="button"] {
+  background-color: #d5dfef;
+}
+.filter {
+  padding: 0;
+  background: white;
+  margin-left: 0;
 }
 .filter li {
   margin: 0;
@@ -14,34 +217,13 @@
 .filter li:hover {
   border-left-color: #9903af;
 }
-input[type="button"] {
-  background-color: #d5dfef;
-}
-.content {
-  min-height: 800px;
-}
-.content {
-  width: 980px;
-}
-.links,
-.nav {
-  min-width: 980px;
-  width: 980px;
-}
-#carlender caption {
-  color: red;
-  display: flex;
-}
-.gray-text {
-  color: gray;
-}
 #calender {
   font-family: 'Roboto', sans-serif;
   background-color: #f8f7fa;
   color: #333;
-  padding: 5px;
+  margin-left: 0;
 }
-#cal-header {
+#calender #cal-header {
   background-color: #8F4586;
   color: white;
   display: flex;
@@ -50,38 +232,64 @@ input[type="button"] {
   margin: 0;
   height: 50px;
 }
-#cal-header input[type="button"] {
+#calender #cal-header input[type="button"] {
   font: 24px;
   background: transparent;
   border: none;
   margin: 0 10px;
   color: #d5dfef;
 }
-#cal-header input[type="button"]:hover {
+#calender #cal-header input[type="button"]:hover {
   color: white;
 }
-#calender table {
-  margin: 5px;
+#calender #cal-content table {
   padding: 10px;
   border: none;
   width: 100%;
   border-collapse: collapse;
 }
-#calender tr {
+#calender #cal-content table tr {
   border: none;
+  padding: 0;
 }
-#calender td {
+#calender #cal-content table td {
   width: 30px;
   height: 30px;
   margin: 0 auto;
   padding: 3px;
   text-align: center;
 }
-#calender .week {
+#calender #cal-content table .week {
   border: none;
 }
-#calender .today {
+#calender #cal-content table .today {
   color: white;
   border-radius: 10px;
   background: #8F4586;
+}
+#tags {
+  color: gray;
+  margin: 20px 0px;
+  padding: 10px;
+  background: white;
+}
+#tags div {
+  margin: 10px;
+}
+#tags div span {
+  margin: 3px;
+}
+#tags div .l-tag {
+  font-size: 36px;
+  color: #8F4586;
+  font-weight: 3em;
+}
+#tags div .m-tag {
+  font-size: 20px;
+  color: #8F4586;
+  font-weight: 2em;
+}
+#tags div .s-tag {
+  font-size: 16px;
+  color: #8F4586;
 }
